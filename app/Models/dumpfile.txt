@@ -1,0 +1,12 @@
+//volunteer model
+protected $fillable=['name','email','phone','cv','body'];
+//category model
+protected $fillable=['name'];
+//contact model
+protected $fillable=['name','email','phone','subject','body'];
+//event model
+protected $fillable = [
+        'event_name',
+        'event_location', 'event_date', 'event_title', 'user_id','event_banner','event_guest','body'
+    ];
+//sponser model

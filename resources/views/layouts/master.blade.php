@@ -113,40 +113,41 @@
                                 <div class="main-nav__main-navigation clearfix">
                                     <ul class=" main-nav__navigation-box float-left">
 
-                                       @guest
+                                        @guest
                                             <li class="dropdown">
-                                            <a href="#">Who We are</a>
-                                            <ul>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="volunteer.html">Volunteers</a></li>
-                                                <li><a href="become-volunteer.html">Become a Volunteer</a></li>
-                                            </ul><!-- /.sub-menu -->
-                                        </li> <li class="dropdown">
-                                            <a href="#">Donations</a>
-                                            <ul>
-                                                <li><a href="campaigns.html">Campaigns</a></li>
-                                                <li><a href="campaign-details.html">Campaigns Details</a></li>
-                                            </ul><!-- /.sub-menu -->
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Events</a>
-                                            <ul>
-                                                <li><a href="event.html">Events</a></li>
-                                                <li><a href="event-details.html">Events Details</a></li>
-                                            </ul><!-- /.sub-menu -->
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">News</a>
-                                            <ul>
-                                                <li><a href="news.html">Our Blog</a></li>
+                                                <a href="#">Who We are</a>
+                                                <ul>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="volunteer.html">Volunteers</a></li>
+                                                    <li><a href="become-volunteer.html">Become a Volunteer</a></li>
+                                                </ul><!-- /.sub-menu -->
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Donations</a>
+                                                <ul>
+                                                    <li><a href="campaigns.html">Campaigns</a></li>
+                                                    <li><a href="campaign-details.html">Campaigns Details</a></li>
+                                                </ul><!-- /.sub-menu -->
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Events</a>
+                                                <ul>
+                                                    <li><a href="event.html">Events</a></li>
+                                                    <li><a href="event-details.html">Events Details</a></li>
+                                                </ul><!-- /.sub-menu -->
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">News</a>
+                                                <ul>
+                                                    <li><a href="news.html">Our Blog</a></li>
 
-                                            </ul><!-- /.sub-menu -->
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
-                                        </li>
-                                       @endguest
-                                       
+                                                </ul><!-- /.sub-menu -->
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        @endguest
+
                                         @guest
                                             @if (Route::has('login'))
                                                 <li>
@@ -167,8 +168,9 @@
                                                 </a>
 
 
-                                                <a class="btn btn-success" style="color:aliceblue" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();">
+                                                <a class="btn btn-success" style="color:aliceblue"
+                                                    href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                 document.getElementById('logout-form').submit();">
                                                     {{ __('Logout') }}
                                                 </a>
 
