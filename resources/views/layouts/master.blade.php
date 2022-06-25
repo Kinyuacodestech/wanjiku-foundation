@@ -170,7 +170,7 @@
 
                                                 <a class="btn btn-success" style="color:aliceblue"
                                                     href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                 document.getElementById('logout-form').submit();">
+                                                                     document.getElementById('logout-form').submit();">
                                                     {{ __('Logout') }}
                                                 </a>
 
@@ -200,7 +200,7 @@
         @yield('content')
 
         <!--Site Footer One Start-->
-        <footer class="site-footer" style="background-image: url(assets/images/backgrounds/site_footer_bg.jpg)">
+        <footer class="site-footer" style="background-image: url({{asset('wk.jpg')}})">
             <div class="container">
                 <div class="site-footer__one-top">
                     <div class="row">

@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->boolean('event_end')->default('false');
+            //$table->boolean('event_expired')->default('false');
             $table->string('event_name');
-            $table->string('event_location');
+            
             $table->string('event_date');
             $table->string('event_title');
             $table->string('event_banner');
